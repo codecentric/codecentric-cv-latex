@@ -1,0 +1,96 @@
+\documentclass[
+	%pdftex,	% PDFTex verwenden
+	a4paper,	% A4 Papier
+	%oneside,	% Einseitig
+	%bibtotoc,	% Literaturverzeichnis einfügen bibtotocnumbered: nummeriert
+	%liststotoc,	% Verzeichnisse einbinden in toc
+	%idxtotoc,	% Index ins Verzeichnis einfügen
+	%halfparskip,	% Europäischer Satz mit abstand zwischen Absätzen
+	%chapterprefix,	% Kapitel anschreiben als Kapitel
+	%headsepline,	% Linie nach Kopfzeile
+	%footsepline,	% Linie vor Fusszeile
+	10pt		% Grössere Schrift, besser lesbar am bildschrim
+]{article}
+
+%
+% Schrift EurostileLTStd
+%
+\usepackage{fontspec}
+\setmainfont{EurostileLTStd}
+\defaultfontfeatures{Ligatures=TeX}
+
+%
+% Randabstände einstellen
+%
+\usepackage[top=4cm, bottom=0.8cm, left=2.25cm, right=2cm]{geometry}
+
+%
+% Paket für Übersetzungen ins Deutsche
+%
+\usepackage[english,ngerman]{babel}
+
+% 
+% Datum im Format 19.01.2015
+%
+\usepackage[ddmmyyyy]{datetime}
+\renewcommand{\dateseparator}{.}
+
+%
+% Paket um Grafiken einbetten zu können
+%
+\usepackage{graphicx}
+
+%
+% aller Bilder werden im Unterverzeichnis figures gesucht:
+%
+\graphicspath{{images/}}
+
+%
+% Hintergrundbild auf der 1. Seite
+%
+\usepackage{eso-pic}
+\newcommand\BackgroundPic{
+ \put(0,0){
+  \parbox[b][\paperheight]{\paperwidth}{%
+   \vfill
+   \centering
+   \includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{codecentric-title.jpg}%
+   \vfill
+}}}
+
+%
+% Hintergrundbild für die Kopfzeile
+%
+\usepackage[pages=all]{background}
+\backgroundsetup{
+placement=top,
+scale=0.5,
+hshift=320,
+vshift=-80,
+color=black,
+opacity=1.0,
+angle=0,
+contents={
+  \includegraphics[]{codecentric-logo.png}
+  }
+}
+
+%
+% Abschnitte
+%
+\usepackage{titlesec}
+\titleformat{\section}[display]
+{\LARGE\color[rgb]{0,0.15,0.34}}
+{\thesection.}{0.5em}{}
+
+%
+% Tabellenzellen-Abstand = 0
+%
+\usepackage{array}
+\renewcommand{\arraystretch}{2}
+
+%
+% Listen mit Abstandsdefinition
+%
+\usepackage{enumitem}
+
