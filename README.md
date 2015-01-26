@@ -9,6 +9,6 @@ Nach der Installation eines LaTeX Textsystems inklusive "xelatex". Diese LaTeX V
 ./xelatex cv.tex
 ```
 
-<img src="https://raw.githubusercontent.com/dickerpulli/codecentric-cv-latex/master/screenshot_pdf_1.png" width="250px">
-<img src="https://raw.githubusercontent.com/dickerpulli/codecentric-cv-latex/master/screenshot_pdf_2.png" width="250px">
-<img src="https://raw.githubusercontent.com/dickerpulli/codecentric-cv-latex/master/screenshot_pdf_3.png" width="250px">
+<img src="https://raw.githubusercontent.com/dickerpulli/codecentric-cv-latex/master/screenshot_pdf_1.png" width="240px">
+<img src="https://raw.githubusercontent.com/dickerpulli/codecentric-cv-latex/master/screenshot_pdf_2.png" width="240px">
+<img src="https://raw.githubusercontent.com/dickerpulli/codecentric-cv-latex/master/screenshot_pdf_3.png" width="240px">
