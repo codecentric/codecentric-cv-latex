@@ -4,7 +4,7 @@ LaTeX Vorlage für die intern genutzten CVs
 ## Build
 Wichtig für die korrekte Darstellung der Schrift ist, dass der Font "EurostileLTStd" im System installiert ist. Dieser Font ist im centerdevice abgelegt: https://public.centerdevice.de/fabd322d-bc1d-4b1b-bcae-c6dd2426660f
 
-Nach der Installation eines LaTeX Textsystems inklusive "xelatex".
+Nach der Installation eines LaTeX Textsystems inklusive "xelatex". Diese LaTeX Variante ist in der Lage Systemfonts, also den cc-Eurostile-Font, direkt zu nutzen.
 ```bash
 ./xelatex cv.tex
 ```
