@@ -18,6 +18,13 @@ RUN mkdir -p $EUROSTILE_FONTS_DIR && \
     unzip $EUROSTILE_FONTS_DIR/font.zip -d $EUROSTILE_FONTS_DIR && \
     rm $EUROSTILE_FONTS_DIR/font.zip
 
+ENV PANTON_FONTS_DIR /usr/share/fonts/truetype/Panton
+RUN mkdir -p $PANTON_FONTS_DIR && \
+    wget -O $PANTON_FONTS_DIR/font.zip \
+        https://public.centerdevice.de/download/7be514e9-531c-4c5e-b3bd-998298450f7e.292bf557-121c-4798-a837-ebbe2ddd1571 && \
+    unzip $PANTON_FONTS_DIR/font.zip -d $PANTON_FONTS_DIR && \
+    rm $PANTON_FONTS_DIR/font.zip
+
 ADD . /opt
 
 WORKDIR /opt
