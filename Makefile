@@ -16,6 +16,8 @@ setup:
 	sudo tlmgr update --self
 	sudo tlmgr install datetime fmtcount background everypage titlesec enumitem
 
-cv: clean
+pdf: clean
 	xelatex cv.tex
+
+cv: clean pdf
 	$(OPEN) cv.pdf
